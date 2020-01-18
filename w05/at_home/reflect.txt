@@ -1,0 +1,20 @@
+Name: Pedro Zelada Souza
+Student number: 116427188
+
+Email: pzelada-souza@myseneca.ca
+
+Workshop: 05 - Structures
+
+Section: SQQ
+
+Date: 10-10-2018
+
+1) In two or three sentences discuss the advantages of using an array of structs versus parallel arrays when dealing with related data:
+
+Structs can store multiple primitive data types in its members, as opposed to arrays that can only store one primitve data type.
+Structs are easier to read on human level.
+The Tag name makes it easier to understand what the variables are supposed to store.
+
+2) The preferred method of declaring a struct data type is in a header file. Briefly explain why.
+
+In place of having to declare the structure multiple times in different files, and having to change every single one of these files when we need to change something in the structure, we just change the header file, so the changes are applied automatically to all the files when the header is included by the compiler.

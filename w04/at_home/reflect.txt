@@ -1,0 +1,18 @@
+Name:           Pedro Zelada Souza
+Student Number: 116427188
+Email:          pzelada-souza@myseneca.ca
+Section:        SQQ
+Workshop:       04
+
+1) In one or two sentences explain why the arrays in this program have to be declared to hold 10 elements?
+Because arrays in C need to be declared with a defined size.
+If the size is 8, in this workshop, and the user inputed a 9 or 10 when he is asked for it, the array would not have enough memory space to hold all the values.
+
+2) In two or three sentences explain the advantages and disadvantages of using matching arrays?
+The advantages of using arrays is that they are faster to process, since the values are stored in memory continually.
+They are also good to store parallel data, in a table manner.
+The downsize of using arrays is that they are inflexible, containing only 1 type of data and can occupy more space in memory than needed.
+
+3) Was the at home portion of this workshop too easy, just right or too hard? Why?
+It was just right.
+We had to code something we did before, which made it easier, but using new elements, such as array, and a dinamic range of days made the logic behind it harder.

@@ -1,0 +1,25 @@
+Name:				Pedro Zelada Souza
+Student number:		116427188
+Email:				pzelada-souza@myseneca.ca
+Section:			SQQ
+Date:				31-10-2018
+----------------------------------------------
+Assignment:			1
+Milestone:			4
+
+1. Briefly explain why you think this assignment has asked you to code a struct, Contact, that holds three other structs as data members.
+
+Having a structure Contact that is supposed to hold all the info or data a contact has in the program looks more organic and is easier for a human to read it.
+Every data from a contact is stored together in one single object, making it easier to access and manipulate the data from that particular contact.
+
+2. What was the most difficult part of this assignment?
+
+Figuring out the difference between compilers and the respective behaviors that each of them have.
+For instance, Visual Studio will accept struct Contact contact = { 0 }; as a way to initialize the structure with all the members holding a 0 or empty string value.
+GCC, on Matrix, will not accept that.
+
+3. How long did it take you to complete Milestone 4?
+
+It took me a few minutes to assemble the code, moving the pieces of code that were already done into functions and declaring the prototypes.
+But figuring out the bugs, syntax differences (like changing the dot operand to the arrow when using a pointer for a construct in a function) and difference in behavior between compilers tooke me a few hours.
+It took me around 4 hours to get everything working properly.

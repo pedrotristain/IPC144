@@ -1,0 +1,83 @@
+Name: Pedro Zelada Souza
+
+Student number:	116427188
+
+Email: pzelada-souza@myseneca.ca
+
+Section: SQQ
+
+Date: 31-10-2018
+Assignment: 1
+
+Milestone: 2
+
+
+1. Can you think of a more efficient way to ask a user to add the required information to each data field?
+
+The user could be prompted to enter the data needed for each data field without the need to split it up before inputting.
+The user would input a full name, a full address and, instead of being asked if they want to input each phone number, the program would prompt the user to enter the required numbers and inform that the input is optional and can be left blank.
+
+---------
+
+This is how it would work:
+
+For the name data, the program could ask the user to input the contact's full name.
+After the user inputed the whole name, the program would process the string, break it apart into smaller strings and assign the new data to the structure members as needed.
+
+For instance: The user is asked to input a full name and inputs Pedro Zelada Smith Souza.
+The program would save all that info in a string (a really long char array), and then, in a loop, look for white spaces in this string.
+The program would store every character up to the next white space into a multi dimensional array, changing to the next index every time a white space is found.
+
+The resulting array would look like this:
+
+char name[40][40]
+
+name[0][] = [P][e][d][r][o]
+name[1][] = [Z][e][l][a][d][a]
+name[2][] = [S][m][i][t][h]
+name[3][] = [S][o][u][z][a]
+
+The first string from the name array would be the contacts's first name. The last string would be the last name.
+i.e.:  name[0][0] => name[0][ LAST_INDEX ]
+
+Every string in between the first and the last ones are the middle names where the program would retrive the initials.
+i.e.: initials[0] = name[1][0]
+i.e.: initials[1] = name[2][0]
+
+The initials are the first index of the middle name(s) string (char arrays).
+i.e.: name[3][0] => name[3][ LAST_INDEX ]
+
+In the example above, the result would be:
+
+First name: Pedro
+Middle initial(s): Z S
+Last name: Souza
+
+After that, the program would assign these values to the structures as necessary.
+
+--
+
+The same process could be done to get the address. The user would input the whole address, the program would store it into a string and process that string, looking for patterns, breaking it down into smaller strings and storing them into a multi dimensional array before assigning the values to the address structure.
+
+For instance, the user enters 55 Finch Avenue West, [100,] North York, M3M2J2 [...]
+This time, instead of looking for empty spaces to split the string into smaller ones, the program would look for commas (or another aribitrary delimiter that HAS to be informed to the user beforehand).
+
+The first index of the resulting array would be the street number and name. We split that string by looking for white spaces, and the first part of the result would be the street number. The rest would be the street name.
+The second index of the resulting array is either the unit number or the city name. Checking if the value is a number will tell which.
+The third index is either the city name or postal code. The verification from the previous step would tell which.
+
+--
+
+The phone part is harder to be changed due to limitations on the program interface.
+A way to improve it is just to prompt the user to input a phone number and inform it that input anything is optional, so it can be left it blank if needed.
+If nothing is inputed by the user, the program just assign an empty value to the phone structure corresponding member.
+
+
+
+
+
+2. Explain why a C string that is required to store up to 25 characters must be capable of storing 26 characters.
+
+When storing strings, C uses a special terminator that follows the last meaningful character in a string, called null terminator.
+This terminator identifies where a string ends.
+To store a string of any size in C, the null terminator has to be accounted for as well, so one extra character is always required.

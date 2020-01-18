@@ -1,0 +1,26 @@
+----------------------------------------------
+Name:               Pedro Zelada Souza
+Student number:     116427188
+Email:              pzelada-souza@myseneca.ca
+Section:            SQQ
+Date:               29-11-2018
+----------------------------------------------
+Assignment:         2
+Milestone:          4
+----------------------------------------------
+
+1. Briefly explain how the two functions findContactIndex and getTenDigitPhone benefit your source code with respect to overall maintenance and readability.
+
+Both functions serve contain code that is reused by other functions multiple times.
+By having these two functions, the code becomes organized, easier to read and simpler to change if the need arise.
+
+2. What did you learn most from doing Assignment 2?
+
+I learned how an organized code, with functions and data structures properly defined make it easier to program.
+When I got to Milestone 4, on Assignment 2, I was expecting to have a lot of work due to the increase in functionality of the program.
+I was surprised that, by having gone through Milestone 1 to 3, my workload on Milestone 4 was greatly reduced, even if the final code source had way more lines than any assignment we had so far.
+
+I also learned (through this course, not only Assignment 2) about the importance of commenting my code.
+I did not had the habit of commenting my code, and it always backfired on me.
+This is basically the first project where I comment almost every line of code.
+It was really easy to understand what was happening even if I reviewed a code weeks after I had wrote it.

@@ -1,0 +1,20 @@
+Name: Pedro Zelada Souza
+
+E-mail: pzelada-souza@myseneca.ca
+
+Student ID: 1166427188
+
+
+Section: Q
+Workshop: 03
+
+
+1) The three iteration constructs are FOR, WHILE and DO WHILE.
+
+2) A DO WHILE loop will execute the code sequence at least once and keep executing it as long as the determined conditions apply. 
+A WHILE loop will only execute the code sequence if the conditinos are met.
+The DO WHILE iteration has it's condition declared in the end of the executable code block, where the WHILE's conditions are declared at the beginning. 
+
+3) CONDITIONAL EXPRESSION is a selection construct that simplifies the optional path construct, also known in C as IF.
+This selection construct has a condition and two sub-expressions that are evaluated depending according to the result of the condition.
+If the condition turns out to be true, the first sub-expression operand is evaluated, otherwise the second one is evaluated instead.

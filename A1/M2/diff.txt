@@ -1,0 +1,10 @@
+
+In line number 32 of your output:
+The output should be:
+Postal code: A8A 4J4
+But your output is: 
+Postal Code: A8A 4J4
+       ^
+-------|
+Professor's character ASCII code: hex(63), dec(99)
+un-matched character ASCII code: hex(43), dec(67)

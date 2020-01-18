@@ -1,0 +1,7 @@
+Name: Pedro Zelada Souza
+E-mail: pzelada-souza@myseneca.ca
+Student ID: 1166427188
+
+By completing this workshop I learned about how the printf() function outputs the literal string inside it to the user.
+It also doesn't know when to break lines and start a new one, so the escape sequence \n has to be used.
+Finally, I learned how to submit the assignment through matrix and how to fix whatever I did wrong when it returns a error message.
